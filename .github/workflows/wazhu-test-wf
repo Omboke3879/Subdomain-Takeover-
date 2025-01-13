@@ -1,0 +1,12 @@
+name: Wazhu testing workflow
+on: push
+jobs:
+  test-workflow
+    runs-on: wazhu
+
+    steps: 
+      -name: checkout
+       uses: actions/checkout@v3
+ 
+      -name: print
+       run: echo"testing wazhu webhook"
